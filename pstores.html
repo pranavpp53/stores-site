@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaperCraft Stationery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #a2aae9;
+            color: #2c3e50;
+        }
+
+        nav {
+            background-color: #e0dfe4;
+            padding: 1rem;
+            color: white;
+        }
+
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 60px;
+            width: auto;
+        }
+
+        .nav-links a {
+            color: #1e3799;
+            text-decoration: none;
+            margin-left: 2rem;
+        }
+
+        .hero {
+            position: relative;
+            background-image: url('https://i.postimg.cc/brJsT4j2/Whats-App-Image-2025-02-07-at-17-32-33-d2657044.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 8rem 2rem;
+            text-align: center;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(74, 105, 189, 0.564);  /* Your existing blue with opacity */
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            background-color: white;
+            color: #1e3799;
+            padding: 0.8rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background-color: #f1f2f6;
+        }
+
+        .features {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .feature-card h3 {
+            color: #1e3799;
+            margin-bottom: 1rem;
+        }
+
+         /* New map section styles */
+         .map-section {
+            padding: 4rem 2rem;
+            margin-top: 4rem;
+        }
+
+        .map-container {
+            max-width: 1133px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+            border-radius: 10px;
+
+        }
+
+        .contact-info {
+            padding: 2rem;
+            border-radius: 10px;
+            background-color: whitesmoke;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+        }
+
+        .contact-info h2 {
+            color: #1e3799;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .map-frame {
+            width: 100%;
+            height: 400px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background-color: #e0dfe4;
+            color: #1e3799;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        /* Media query for responsive design */
+        @media (max-width: 768px) {
+            .map-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">
+                <img src="https://i.postimg.cc/9F5jQm5r/Screenshot-2025-02-07-164716-removebg-preview.png" alt="PaperCraft Logo">
+            </div>
+            <div class="nav-links">
+                <a href="#products">Products</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Pulikkathara Stores</h1>
+            <p>Stationery and vegetable items availiable here</p>
+            <a href="#products" class="cta-button">Shop Now</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <h3>demo Products</h3>
+            <p>Curated selection of high-quality stationery from renowned brands worldwide</p>
+        </div>
+        <div class="feature-card">
+            <h3>demo Products</h3>
+            <p>Curated selection of high-quality stationery from renowned brands worldwide</p>
+        </div>
+        <div class="feature-card">
+            <h3>demo Products</h3>
+            <p>Curated selection of high-quality stationery from renowned brands worldwide</p>
+        </div>
+    </section>
+
+    <section class="map-section" id="contact">
+        <div class="map-container">
+            <div class="contact-info">
+                <h2>Visit Our Store</h2>
+                <p><strong>Address:</strong><br>
+                pulikkathara stores<br>
+                kannapuram , p.o.chettupuzha,<br>
+                thrissur 680012</p>
+                <p><strong>Hours:</strong><br>
+                Monday - sunday: 7:00 AM - 9:30 PM<br>
+                <p><strong>Contact:</strong><br>
+                 Sujith : 9447126869 <br>Ajith : 9605758480</p>
+            </div>
+            <iframe 
+                class="map-frame"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3550.0339418412764!2d76.17072207451409!3d10.507344864100437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7edbafa47e85b%3A0x64e392296daa334c!2sPulikkathara%20Stores!5e1!3m2!1sen!2sin!4v1738931321280!5m2!1sen!2sin"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 PulikkatharaStores. All rights reserved.</p>
+    </footer>
+</body>
+</html>
